@@ -1,6 +1,7 @@
 # Netflix SQL Data Analysis 📊🎬
 
-![netflix_logo]()
+![netflix_logo](https://github.com/tanvirfau/netflix_sql_project/blob/main/netflix_logo.jpg)
+
 In this project, I analyzed Netflix's vast content database using SQL, solving 15 key business problems related to content distribution, viewer preferences, and platform trends. By leveraging SQL queries, I extracted valuable insights to understand how Netflix structures its content.
 
 🔍 Key Insights & Findings:
