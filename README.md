@@ -37,5 +37,5 @@
 
 This project demonstrates the power of SQL in data-driven decision-making for streaming platforms. 🚀
 
-## ![📌](https://github.com/tanvirfau/netflix_sql_project) Check out the detailed queries and findings in the repository!
+📌 [Check out the detailed queries and findings in the repository!](https://github.com/tanvirfau/netflix_sql_project):
 
