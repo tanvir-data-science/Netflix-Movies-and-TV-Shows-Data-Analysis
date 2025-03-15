@@ -7,13 +7,13 @@
 # 📊 Business Problems & SQL Solutions
 
 ### 1️⃣ Count the number of Movies vs TV Shows
-...sql
+```sql
 SELECT 
     movie_types,
     COUNT(*) AS total_content
 FROM netflix
 GROUP BY movie_types;
-...
+```
 ### 2️⃣ Find the most common rating for Movies and TV Shows
 '''sql
 SELECT 
