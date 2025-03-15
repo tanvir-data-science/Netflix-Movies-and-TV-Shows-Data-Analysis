@@ -15,7 +15,7 @@ FROM netflix
 GROUP BY movie_types;
 ```
 ### 2️⃣ Find the most common rating for Movies and TV Shows
-'''sql
+```sql
 SELECT 
     movie_types,
     rating
@@ -29,16 +29,16 @@ FROM (
     GROUP BY movie_types, rating
 ) AS t1
 WHERE ranking = 1;
-
+```
 ### 3️⃣ List all movies released in a specific year (e.g., 2020)
-
+```sql
 SELECT * 
 FROM netflix
 WHERE movie_types = 'Movie'
 AND release_year = 2020;
-
+```
 ### 4️⃣ Find the top 5 countries with the most content on Netflix
-
+```sql
 SELECT 
     UNNEST(string_to_array(country, ',')) AS new_country,
     COUNT(show_id) AS total_content
@@ -46,27 +46,27 @@ FROM netflix
 GROUP BY new_country
 ORDER BY total_content DESC
 LIMIT 5;
-
+```
 ### 5️⃣ Identify the longest movie on Netflix
-
+```sql
 SELECT * 
 FROM netflix
 WHERE type = 'Movie'
 ORDER BY SPLIT_PART(duration, ' ', 1)::INT DESC
 LIMIT 1;
-
+```
 ###6️⃣ Find content added in the last 5 years
-
+```sql
 SELECT *
 FROM netflix
 WHERE TO_DATE(date_added, 'Month DD, YYYY') >= CURRENT_DATE - INTERVAL '5 years';
-
+```
 ### 7️⃣ Find all the Movies/TV Shows by director 'Rajiv Chilaka'
-
+```sql
 SELECT *
 FROM netflix
 WHERE director ILIKE '%Rajiv Chilaka%';
-
+```
 ## 🔍 Key Insights & Findings:
 
 ✔ Movies vs TV Shows: Analyzed the distribution of content formats.
