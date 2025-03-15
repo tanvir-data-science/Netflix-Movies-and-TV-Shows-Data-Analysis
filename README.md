@@ -2,9 +2,9 @@
 
 ![netflix_logo](https://github.com/tanvirfau/netflix_sql_project/blob/main/netflix_logo.jpg)
 
-In this project, I analyzed Netflix's vast content database using SQL, solving 15 key business problems related to content distribution, viewer preferences, and platform trends. By leveraging SQL queries, I extracted valuable insights to understand how Netflix structures its content.
+## In this project, I analyzed Netflix's vast content database using SQL, solving 15 key business problems related to content distribution, viewer preferences, and platform trends. By leveraging SQL queries, I extracted valuable insights to understand how Netflix structures its content.
 
-🔍 Key Insights & Findings:
+## 🔍 Key Insights & Findings:
 
 ✔ Movies vs TV Shows: Analyzed the distribution of content formats.
 
@@ -24,10 +24,10 @@ In this project, I analyzed Netflix's vast content database using SQL, solving 1
 
 ✔ Violence & Keyword-Based Categorization: Classified content as Good or Bad based on descriptions.
 
-📌 Business Recommendations:
+## 📌 Business Recommendations:
 
 
-To optimize user engagement, Netflix can:
+## To optimize user engagement, Netflix can:
 
 📢 Prioritize content production in top-performing regions.
 
@@ -37,5 +37,5 @@ To optimize user engagement, Netflix can:
 
 This project demonstrates the power of SQL in data-driven decision-making for streaming platforms. 🚀
 
-📌 Check out the detailed queries and findings in the repository!
+## 📌 Check out the detailed queries and findings in the repository!
 
