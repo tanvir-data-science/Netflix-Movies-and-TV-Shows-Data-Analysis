@@ -1,17 +1,15 @@
 # 🍿 Netflix Movies and TV sHOWS Data Analysis 📊🎬
 ![Netflix Movies & TV Shows](https://github.com/tanvirfau/Netflix-Audience-Data-Analysis-Using-SQL/blob/main/Netflix%20Movies%20and%20TV%20Shows%20Dashboard.png)
 
-<P>In this project, I analyzed Netflix's vast content database using SQL, solving 15 key business problems related to content distribution, viewer preferences, and platform trends. By leveraging SQL queries, I extracted valuable insights to understand how Netflix structures its content.</P>
-
 - Objective:
 This project aims to provide a comprehensive analysis of Netflix's content library through an interactive Power BI dashboard. By exploring key details such as content type, ratings, release years, countries, and directors, the dashboard offers valuable insights into the diverse world of Netflix movies and TV shows.
 
 <img src="https://github.com/tanvirfau/netflix_sql_project/blob/main/netflix_logo.jpg" alt="Netflix Logo" width="1200" height="400">
 
--- About the Dataset:
+- About the Dataset:
 The dataset for this project was sourced from Kaggle and contains detailed information on Netflix's movie and TV show offerings. Key statistics from the dataset include:
 
-Total Titles: 8803
+* Total Titles: 8803
 
 Total Ratings: 19
 
