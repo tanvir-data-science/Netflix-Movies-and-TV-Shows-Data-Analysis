@@ -8,7 +8,7 @@ This project aims to provide a comprehensive analysis of Netflix's content libra
 
 <img src="https://github.com/tanvirfau/netflix_sql_project/blob/main/netflix_logo.jpg" alt="Netflix Logo" width="1200" height="400">
 
-About the Dataset:
+-- About the Dataset:
 The dataset for this project was sourced from Kaggle and contains detailed information on Netflix's movie and TV show offerings. Key statistics from the dataset include:
 
 Total Titles: 8803
