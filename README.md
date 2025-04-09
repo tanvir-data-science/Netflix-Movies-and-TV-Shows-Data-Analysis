@@ -1,103 +1,53 @@
-# Netflix SQL Data Analysis 📊🎬
+# Netflix Movies and TV sHOWS Data Analysis 📊🎬
 ![Netflix Movies & TV Shows](https://github.com/tanvirfau/Netflix-Audience-Data-Analysis-Using-SQL/blob/main/Netflix%20Movies%20and%20TV%20Shows%20Dashboard.png)
 
 <P>In this project, I analyzed Netflix's vast content database using SQL, solving 15 key business problems related to content distribution, viewer preferences, and platform trends. By leveraging SQL queries, I extracted valuable insights to understand how Netflix structures its content.</P>
 
-# 📊 Business Problems & SQL Solutions
+Objective:
+This project aims to provide a comprehensive analysis of Netflix's content library through an interactive Power BI dashboard. By exploring key details such as content type, ratings, release years, countries, and directors, the dashboard offers valuable insights into the diverse world of Netflix movies and TV shows.
 
-### 1️⃣ Count the number of Movies vs TV Shows
-```sql
-SELECT 
-    movie_types,
-    COUNT(*) AS total_content
-FROM netflix
-GROUP BY movie_types;
-```
-### 2️⃣ Find the most common rating for Movies and TV Shows
-```sql
-SELECT 
-    movie_types,
-    rating
-FROM (
-    SELECT
-        movie_types,
-        rating,
-        COUNT(*) AS count,
-        RANK() OVER (PARTITION BY movie_types ORDER BY COUNT(*) DESC) AS ranking
-    FROM netflix
-    GROUP BY movie_types, rating
-) AS t1
-WHERE ranking = 1;
-```
-### 3️⃣ List all movies released in a specific year (e.g., 2020)
-```sql
-SELECT * 
-FROM netflix
-WHERE movie_types = 'Movie'
-AND release_year = 2020;
-```
-### 4️⃣ Find the top 5 countries with the most content on Netflix
-```sql
-SELECT 
-    UNNEST(string_to_array(country, ',')) AS new_country,
-    COUNT(show_id) AS total_content
-FROM netflix
-GROUP BY new_country
-ORDER BY total_content DESC
-LIMIT 5;
-```
-### 5️⃣ Identify the longest movie on Netflix
-```sql
-SELECT * 
-FROM netflix
-WHERE type = 'Movie'
-ORDER BY SPLIT_PART(duration, ' ', 1)::INT DESC
-LIMIT 1;
-```
-###6️⃣ Find content added in the last 5 years
-```sql
-SELECT *
-FROM netflix
-WHERE TO_DATE(date_added, 'Month DD, YYYY') >= CURRENT_DATE - INTERVAL '5 years';
-```
-### 7️⃣ Find all the Movies/TV Shows by director 'Rajiv Chilaka'
-```sql
-SELECT *
-FROM netflix
-WHERE director ILIKE '%Rajiv Chilaka%';
-```
-## 🔍 Key Insights & Findings:
+<img src="https://github.com/tanvirfau/netflix_sql_project/blob/main/netflix_logo.jpg" alt="Netflix Logo" width="1200" height="400">
 
-✔ Movies vs TV Shows: Analyzed the distribution of content formats.
+About the Dataset:
+The dataset for this project was sourced from Kaggle and contains detailed information on Netflix's movie and TV show offerings. Key statistics from the dataset include:
 
-✔ Most Common Ratings: Identified popular content classifications.
+Total Titles: 8803
 
-✔ Top 5 Content-Rich Countries: Explored Netflix’s global presence.
+Total Ratings: 19
 
-✔ Longest Movie: Found the film with the highest runtime.
+Total Genres: 515
 
-✔ Recent Additions: Tracked content added in the last 5 years.
+Total Directors: 4527
 
-✔ Popular Directors & Actors: Filtered works of Rajiv Chilaka & Salman Khan.
+Release Date Range: 1925–2021
 
-✔ Genre Distribution: Categorized content based on themes.
+This dataset forms the foundation for an in-depth analysis of Netflix's content catalog.
 
-✔ Content Trends in India: Ranked years with the highest average content release.
+Tools Used:
+Power BI: The primary tool used for creating the interactive dashboard, allowing for the seamless visualization of the dataset. Power BI's rich features enable users to explore and analyze complex data effectively, making it ideal for this type of content analysis.
 
-✔ Violence & Keyword-Based Categorization: Classified content as Good or Bad based on descriptions.
+Key Features:
+Interactive Visualizations: Dive deep into Netflix's content with interactive charts, graphs, and tables.
 
-## 📌 Business Recommendations:
+Insightful Analysis: Uncover trends, patterns, and correlations within Netflix's vast collection of movies and TV shows.
 
+User-Friendly Interface: Navigate effortlessly through the dashboard and explore specific titles, genres, and content categories.
 
-## To optimize user engagement, Netflix can:
+Data Exploration: Analyze details such as cast, directors, ratings, release years, and durations to gain a better understanding of the platform’s content.
 
-📢 Prioritize content production in top-performing regions.
+Visualizations:
+The dashboard includes key insights from the following business questions:
 
-🎯 Enhance recommendations by tracking content trends over time.
+Movies vs TV Shows: Distribution of movies and TV shows on Netflix.
 
-🛑 Monitor potentially sensitive content classifications.
+Most Common Ratings: Rating trends for different types of content.
 
-This project demonstrates the power of SQL in data-driven decision-making for streaming platforms. 🚀
+Top 5 Countries with Most Content: Discover where the majority of Netflix content is produced.
 
-📌 [Check out the detailed queries and findings in the repository!](https://github.com/tanvirfau/netflix_sql_project):
+Content Added in the Last 5 Years: Track Netflix’s content growth over the last half-decade.
+
+Movies by Director: Analyze movies directed by specific individuals like 'Rajiv Chilaka'.
+
+Content Categorization: Classify content based on the presence of keywords like "kill" or "violence."
+
 
