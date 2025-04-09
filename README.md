@@ -1,4 +1,4 @@
-# 🍿 Netflix Movies and TV sHOWS Data Analysis 📊🎬
+# 🍿 Netflix Movies and TV Shows Data Analysis 📊🎬
 ![Netflix Movies & TV Shows](https://github.com/tanvirfau/Netflix-Audience-Data-Analysis-Using-SQL/blob/main/Netflix%20Movies%20and%20TV%20Shows%20Dashboard.png)
 
 # Objective:
