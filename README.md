@@ -2,7 +2,7 @@
 ![Netflix Movies & TV Shows](https://github.com/tanvirfau/Netflix-Audience-Data-Analysis-Using-SQL/blob/main/Netflix%20Movies%20and%20TV%20Shows%20Dashboard.png)
 
 # Objective:
-This project aims to provide a comprehensive analysis of Netflix's content library through an interactive Power BI dashboard. By exploring key details such as content type, ratings, release years, countries, and directors, the dashboard offers valuable insights into the diverse world of Netflix movies and TV shows.
+This project aims to analyze Netflix's extensive content library through SQL queries and an interactive Power BI dashboard. By exploring details such as content types, ratings, genres, release years, and directors, the dashboard provides valuable insights into Netflix’s catalog, helping uncover trends and patterns in its offerings.
 
 <img src="https://github.com/tanvirfau/netflix_sql_project/blob/main/netflix_logo.jpg" alt="Netflix Logo" width="1200" height="400">
 
@@ -22,10 +22,11 @@ The dataset for this project was sourced from Kaggle and contains detailed infor
 This dataset forms the foundation for an in-depth analysis of Netflix's content catalog.
 
 # Tools Used:
-Power BI: The primary tool used for creating the interactive dashboard, allowing for the seamless visualization of the dataset. Power BI's rich features enable users to explore and analyze complex data effectively, making it ideal for this type of content analysis.
+* SQL (PostgreSQL): Used for data extraction and solving complex business questions. PostgreSQL was employed to perform SQL queries for analyzing Netflix's content library and generating valuable insights.
+
+* Power BI: The primary tool used for creating the interactive dashboard, allowing for seamless visualization of the dataset. Power BI's rich features enable users to explore and analyze complex data effectively, making it ideal for this type of content analysis.
 
 # Key Features:
-* Interactive Visualizations: Dive deep into Netflix's content with interactive charts, graphs, and tables.
 
 * Insightful Analysis: Uncover trends, patterns, and correlations within Netflix's vast collection of movies and TV shows.
 
