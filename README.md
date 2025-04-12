@@ -1,10 +1,11 @@
 # 🍿 Netflix Movies and TV Shows Data Analysis 📊🎬
-![Netflix Movies & TV Shows](https://github.com/tanvirfau/Netflix-Audience-Data-Analysis-Using-SQL/blob/main/Netflix%20Movies%20and%20TV%20Shows%20Dashboard.png)
+
+<img src="https://github.com/tanvirfau/netflix_sql_project/blob/main/netflix_logo.jpg" alt="Netflix Logo" width="1200" height="400">
 
 # Objective:
 This project aims to analyze Netflix's extensive content library through SQL queries and an interactive Power BI dashboard. By exploring details such as content types, ratings, genres, release years, and directors, the dashboard provides valuable insights into Netflix’s catalog, helping uncover trends and patterns in its offerings.
 
-<img src="https://github.com/tanvirfau/netflix_sql_project/blob/main/netflix_logo.jpg" alt="Netflix Logo" width="1200" height="400">
+
 
 # About the Dataset:
 The dataset for this project was sourced from Kaggle and contains detailed information on Netflix's movie and TV show offerings. Key statistics from the dataset include:
@@ -25,6 +26,9 @@ This dataset forms the foundation for an in-depth analysis of Netflix's content 
 * SQL (PostgreSQL): Used for data extraction and solving complex business questions. PostgreSQL was employed to perform SQL queries for analyzing Netflix's content library and generating valuable insights.
 
 * Power BI: The primary tool used for creating the interactive dashboard, allowing for seamless visualization of the dataset. Power BI's rich features enable users to explore and analyze complex data effectively, making it ideal for this type of content analysis.
+  
+![Netflix Movies & TV Shows](https://github.com/tanvirfau/Netflix-Audience-Data-Analysis-Using-SQL/blob/main/Netflix%20Movies%20and%20TV%20Shows%20Dashboard.png)
+
 
 # Key Features:
 
